@@ -1,3 +1,13 @@
+# Problem 7
+#
+# Find the greatest product of five consecutive digits in the 1000-digit number. see problem8.txt
+#
+# @date 12/03/2012 
+# @author Ciarán McCann
+# @website http://ciaranmccann.me/
+
+
+
 def chunk(collection, chuckSize):
     return [collection[i:i+chuckSize] for i in range(0, len(collection), chuckSize)]
 
@@ -34,5 +44,4 @@ while index < len(digits)-5:
 
 print(largest)
 
-#printGridArray(digits,50)
 

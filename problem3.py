@@ -1,3 +1,14 @@
+# Problem 3
+#
+# The prime factors of 13195 are 5, 7, 13 and 29.
+# What is the largest prime factor of the number 600851475143 ?
+#
+# @date 11/03/2012 
+# @author Ciarán McCann
+# @website http://ciaranmccann.me/
+#
+# TODO - optimizes
+
 from time import time
 import math
 
@@ -17,7 +28,6 @@ def largestPrimeFactor(n):
 	largestPrimeFactor = n;
 	while (True):
 		prime = LargestPrimeBetween(0, (largestPrimeFactor))
-		#print( " FOUND prime " + str(prime))
 		if n % prime == 0:
 			return prime
 		else:
@@ -26,7 +36,6 @@ def largestPrimeFactor(n):
 
 start = time()
 print(start)
-print(largestPrimeFactor(60085147514))	
+print(largestPrimeFactor(13195))	
 end = time()
 print(end - start)
-#print(largestPrimeFactor(600851475143))
